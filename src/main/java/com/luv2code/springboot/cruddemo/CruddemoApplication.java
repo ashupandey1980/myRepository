@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CruddemoApplication {
 
 	public static void main(String[] args) {
+		System.out.println("I am in main application");
 		SpringApplication.run(CruddemoApplication.class, args);
 	}
 

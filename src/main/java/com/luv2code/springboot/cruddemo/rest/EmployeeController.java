@@ -19,6 +19,7 @@ public class EmployeeController {
 
     @GetMapping("/employees")
     public List<Employee> findAllEmployee(){
+        System.out.println("Get It");
         return employeeService.findAll();
     }
 
@@ -34,6 +35,7 @@ public class EmployeeController {
     @PostMapping("/employees")
     public Employee saveEmployee(@RequestBody Employee theEmployee){
         //theEmployee.setId(0);
+
         employeeService.save(theEmployee);
         return theEmployee;
     }
